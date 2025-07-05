@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hero Page 1</title>
+  <title>Tessia Eralith</title>
   <style>
     * {
       margin: 0;
@@ -12,20 +12,29 @@
     }
 
     html, body {
-      background: url(./img/page2.jpg) center/cover no-repeat;
+      background: url(./img/tessbg.jpeg) center/cover no-repeat;
       height: 100%;
       display: flex;
       flex-direction: column;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      color: #fff;
     }
 
     header {
-      background-color: #333;
-      color: #fff;
+      background-color: rgba(255, 196, 2, 0.5);
       padding: 20px;
       text-align: center;
+    }
+
+    header h1 {
+      transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+      will-change: transform, text-shadow, color;
+    }
+
+    header h1:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 30px #000000, 0 0 30px #000000;
+      color: #0d0610;
     }
 
     nav ul {
@@ -42,40 +51,63 @@
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
+      will-change: transform, color, text-shadow;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 15px #000, 0 0 25px #000;
+      color: #000000;
     }
 
     main {
       flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
     }
 
     .hero {
-      height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      background-color: rgba(255, 196, 2, 0.5);
+      padding: 40px 20px 40px 40px;
+      color: #fff;
+      width: 45%;
+      margin-right: 60px;
+      gap: 20px;
       align-items: center;
-      text-align: center;
-      position: relative;
+      justify-content: space-between;
     }
 
-    .hero h2, .hero p {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 8px;
-      color: #fff;
-      margin: 10px 0;
+    .hero-text {
+      flex: 1;
+      text-align: left;
     }
 
     .hero h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
+    }
+
+    .hero-image {
+      flex: 1;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 240px; /* slightly bigger image */
+      height: auto;
+      display: block;
     }
 
     footer {
-      background-color: #222;
+      background-color: rgba(255, 196, 2, 0.5);
       color: white;
       text-align: center;
       padding: 15px;
@@ -84,28 +116,32 @@
 </head>
 <body>
   <header>
-    <h1>My Sample Website</h1>
+    <h1>Tessia Eralith</h1>
     <nav>
-<ul>
+      <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="../page1/index.html">Hero 1</a></li>
-        <li><a href="../page2/index.html">Hero 2</a></li>
-        <li><a href="../page3/index.html">Hero 3</a></li>
-        <li><a href="../page4/index.html">Hero 4</a></li>
-        <li><a href="../page5/index.html">Hero 5</a></li>
+        <li><a href="../page1/index.html">Arthur Leywin</a></li>
+        <li><a href="../page3/index.html">Elijah Knight</a></li>
+        <li><a href="../page4/index.html">Sylvie</a></li>
+        <li><a href="../page5/index.html">Professor Gideon</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h2>Hero Page 2</h2>
-      <p>This is the first hero page with unique content.</p>
+      <div class="hero-text">
+        <h2>Hero Page 2</h2>
+        <p>Tessia Eralith is a deuteragonist of The Beginning After The End. She is the sole daughter of Alduin Eralith and Merial Eralith, former king and queen of the elven kingdom of Elenoir, and heiress to the throne. Tessia is the childhood friend and love interest of Arthur Leywin, who rescued her from bandits and began training with him under her grandfather Virion Eralith. After becoming the apprentice of Cynthia Goodsky, Tessia was appointed as Student Council President of Xyrus Academy. Following the attack on Xyrus Academy, Tessia joined the war against Alacrya.</p>
+      </div>
+      <div class="hero-image">
+        <img src="./img/tess.jpeg" alt="Tessia Eralith">
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Sample Website</p>
+    <p>&copy; 2025 Fetalvero</p>
   </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hero Page 1</title>
+  <title>Arthur Leywin</title>
   <style>
     * {
       margin: 0;
@@ -12,20 +12,29 @@
     }
 
     html, body {
-      background: url(./img/page1.jpg) center/cover no-repeat;
-      height: 100%;
+      background: url(./img/artpg1.jpg) center/cover no-repeat;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
     }
 
     header {
-      background-color: #333;
-      color: #fff;
+      background-color: rgba(51, 51, 51, 0.6);
+      color: #ffffff;
       padding: 20px;
       text-align: center;
+      transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out, color 0.4s ease-in-out; 
+    }
+
+     header h1:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 30px #000000, 0 0 30px #000000;
+    color: #690093;
     }
 
     nav ul {
@@ -42,70 +51,127 @@
     nav ul li a {
       color: #fff;
       text-decoration: none;
-    }
+    }header {
+  background-color: rgba(51, 51, 51, 0.6);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+  will-change: transform, text-shadow, color;
+}
+
+header h1:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 30px #000000, 0 0 30px #9201ba;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
+  will-change: transform, color, text-shadow;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px #000000, 0 0 25px #000000;
+  color: #ffffff;
+}
+
 
     main {
       flex: 1;
+      display: flex;
+      padding: 20px;
     }
 
-    .hero {
-      height: 100vh;
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .left-panel {
+      width: 35%;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       text-align: center;
-      position: relative;
     }
 
-    .hero h2, .hero p {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 8px;
-      color: #fff;
-      margin: 10px 0;
+    .left-panel img {
+      width: 100%;
+      height: 80%;
+      max-width: 250px;
+      margin-bottom: 20px;
+      border-radius: 0; /* no rounded corners on image */
     }
 
-    .hero h2 {
-      font-size: 3rem;
+    .left-panel p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
 
-    .hero p {
-      font-size: 1.3rem;
-    }
+   
 
     footer {
-      background-color: #222;
+      background-color: rgba(34, 34, 34, 0.6);
       color: white;
       text-align: center;
       padding: 15px;
+      margin-top: auto;
+      border-radius: 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Sample Website</h1>
+    <h1>Arthur Leywin</h1>
     <nav>
       <ul>
-        <li><a href= "/index.html">Home</a></li>
-        <li><a href="page1.html">Hero 1</a></li>
-        <li><a href="../page2/index.html">Hero 2</a></li>
-        <li><a href="../page3/index.html">Hero 3</a></li>
-        <li><a href="../page4/index.html">Hero 4</a></li>
-        <li><a href="../page5/index.html">Hero 5</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="../page2/index.html">Tessia Eralith</a></li>
+        <li><a href="../page3/index.html">Elijah Knight</a></li>
+        <li><a href="../page4/index.html">Sylvie</a></li>
+        <li><a href="../page5/index.html">Professor Gideon</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Hero Page 1</h2>
-      <p>This is the first hero page with unique content.</p>
-    </section>
+    <div class="content-wrapper">
+      <div class="left-panel">
+        <img src="./img/Arthur Leywin.jpeg" alt="Arthur Leywin">
+        <p> Arthur Leywin is the main protagonist of The Beginning After The End. In his previous life, he was a king named Grey before he was reincarnated into a new world, on the continent of Dicathen.
+            In his former world, he lived as someone who stood on the top of his country in terms of combat and authority, until he was assassinated one day. However after dying as King Grey, he reawoke as Arthur Leywin as if he wasn’t assassinated.
+            After being reincarnated into the Leywin Family, Grey decided that, unlike his previous life, he would live this life to the fullest. To be loved, and surrounded by the friends and family he was void of in his past life.        </p>
+      </div>
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Sample Website</p>
+    <p>&copy; 2025 Fetalvero</p>
   </footer>
 </body>
 </html>

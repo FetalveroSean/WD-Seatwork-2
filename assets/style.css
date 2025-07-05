@@ -47,7 +47,7 @@
   bottom: 10px;
   width: 150px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding-top: 20px;
+  padding-top: 15px;
   overflow-y: auto;
   z-index: 10;
 }
@@ -109,7 +109,7 @@ header {
 
 footer {
   margin-left: 160px;
-  padding: 20px;
+  padding: 50px;
 }
 
 
@@ -117,11 +117,11 @@ footer {
   main {
     flex: 1;
     background-color: rgba(0, 0, 0, 0.4); /* optional overlay */
-    padding: 20px;
+    padding:  0px;
   }
 
   .hero {
-    padding: 100px 20px;
+    padding: 50px 20px;
     text-align: center;
     color: white;
   }
