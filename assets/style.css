@@ -1,8 +1,9 @@
 
   * {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     box-sizing: border-box;
+    
   }
 
   html, body {
@@ -22,6 +23,7 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
+    
   }
 
   header h1 {
@@ -39,12 +41,13 @@
  /* Sidebar on the left */
 .sidebar {
   position: fixed;
-  top: 8.5px;
+  top: 10px;
   left: 8.5px;
-  bottom: 8.5px;
+  right: 10px;
+  bottom: 10px;
   width: 150px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding-top: 50px;
+  padding-top: 20px;
   overflow-y: auto;
   z-index: 10;
 }
