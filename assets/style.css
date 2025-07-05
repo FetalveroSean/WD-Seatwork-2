@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', sans-serif;
-
-    background: url('img/home2.jpeg') no-repeat center center fixed;
+    background: url('./img/home2.jpeg') no-repeat center center fixed;
+    background-size: cover;
 
     color: #fff;
   }
