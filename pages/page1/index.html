@@ -25,16 +25,19 @@
 
     header {
       background-color: rgba(51, 51, 51, 0.6);
-      color: #ffffff;
+      color: #fff;
       padding: 20px;
       text-align: center;
-      transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out, color 0.4s ease-in-out; 
     }
 
-     header h1:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 30px #000000, 0 0 30px #000000;
-    color: #690093;
+    header h1 {
+      transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+    }
+
+    header h1:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 30px #000000, 0 0 30px #9201ba;
+      color: #ffffff;
     }
 
     nav ul {
@@ -51,48 +54,14 @@
     nav ul li a {
       color: #fff;
       text-decoration: none;
-    }header {
-  background-color: rgba(51, 51, 51, 0.6);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+      transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
+    }
 
-header h1 {
-  transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
-  will-change: transform, text-shadow, color;
-}
-
-header h1:hover {
-  transform: scale(1.2);
-  text-shadow: 0 0 30px #000000, 0 0 30px #9201ba;
-  color: #ffffff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
-  will-change: transform, color, text-shadow;
-}
-
-nav ul li a:hover {
-  transform: scale(1.2);
-  text-shadow: 0 0 15px #000000, 0 0 25px #000000;
-  color: #ffffff;
-}
-
+    nav ul li a:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 15px #000000, 0 0 25px #000000;
+      color: #ffffff;
+    }
 
     main {
       flex: 1;
@@ -102,28 +71,25 @@ nav ul li a:hover {
 
     .content-wrapper {
       display: flex;
-      flex-direction: row;
       width: 100%;
       gap: 20px;
     }
 
     .left-panel {
       width: 35%;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(51, 51, 51, 0.6);
       padding: 30px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
       text-align: center;
     }
 
     .left-panel img {
       width: 100%;
-      height: 80%;
       max-width: 250px;
       margin-bottom: 20px;
-      border-radius: 0; /* no rounded corners on image */
+      border-radius: 0;
     }
 
     .left-panel p {
@@ -131,7 +97,30 @@ nav ul li a:hover {
       line-height: 1.6;
     }
 
-   
+    /* Static image panel */
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: rgba(51, 51, 51, 0.6);
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(2);
+      z-index: 100;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+    }
 
     footer {
       background-color: rgba(34, 34, 34, 0.6);
@@ -139,7 +128,6 @@ nav ul li a:hover {
       text-align: center;
       padding: 15px;
       margin-top: auto;
-      border-radius: 0;
     }
   </style>
 </head>
@@ -161,14 +149,23 @@ nav ul li a:hover {
     <div class="content-wrapper">
       <div class="left-panel">
         <img src="./img/Arthur Leywin.jpeg" alt="Arthur Leywin">
-        <p> Arthur Leywin is the main protagonist of The Beginning After The End. In his previous life, he was a king named Grey before he was reincarnated into a new world, on the continent of Dicathen.
-            In his former world, he lived as someone who stood on the top of his country in terms of combat and authority, until he was assassinated one day. However after dying as King Grey, he reawoke as Arthur Leywin as if he wasn’t assassinated.
-            After being reincarnated into the Leywin Family, Grey decided that, unlike his previous life, he would live this life to the fullest. To be loved, and surrounded by the friends and family he was void of in his past life.        </p>
-      </div>
-        </section>
+        <p>Arthur Leywin is the main protagonist of The Beginning After The End. In his previous life, he was a king named Grey before he was reincarnated into a new world, on the continent of Dicathen.
+        In his former world, he lived as someone who stood on the top of his country in terms of combat and authority, until he was assassinated one day. However after dying as King Grey, he reawoke as Arthur Leywin as if he wasn’t assassinated.
+        After being reincarnated into the Leywin Family, Grey decided that, unlike his previous life, he would live this life to the fullest. To be loved, and surrounded by the friends and family he was void of in his past life.</p>
       </div>
     </div>
   </main>
+
+  <!-- Static photo panel -->
+ <!-- Static photo panel with 6 Arthur images -->
+<section class="image-gallery">
+  <img src="./img/1.jpeg" alt="Arthur Photo 1">
+  <img src="./img/2.jpeg" alt="Arthur Photo 2">
+  <img src="./img/3.jpeg" alt="Arthur Photo 3">
+  <img src="./img/4.jpeg" alt="Arthur Photo 4">
+  <img src="./img/5.jpeg" alt="Arthur Photo 5">
+  <img src="./img/6.jpeg" alt="Arthur Photo 6">
+</section>
 
   <footer>
     <p>&copy; 2025 Fetalvero</p>

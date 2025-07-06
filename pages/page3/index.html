@@ -12,20 +12,31 @@
     }
 
     html, body {
-      background: url('./img/page3.jpg') center/cover no-repeat;
+      background: url('./img/elijah.jpeg') center/cover no-repeat;
       height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
     }
 
     header {
-      background-color: #333;
+      background-color: rgba(105, 63, 3, 0.7);
       color: #fff;
       padding: 20px;
       text-align: center;
+    }
+
+    header h1 {
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    header h1:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 15px rgba(249, 190, 70, 0.8);
+      color: #ffffff;
     }
 
     nav ul {
@@ -42,40 +53,54 @@
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 8px rgba(249, 190, 70, 0.8);
+      color: #ffffff;
     }
 
     main {
       flex: 1;
-    }
-
-    .hero {
-      height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
-      position: relative;
+      padding: 50px;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .hero h2, .hero p {
-      background-color: rgba(0, 0, 0, 0.6);
+    .left-photo {
+      flex: 1;
       padding: 20px;
-      border-radius: 8px;
-      color: #fff;
-      margin: 10px 0;
     }
 
-    .hero h2 {
-      font-size: 3rem;
+    .left-photo img {
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
 
-    .hero p {
-      font-size: 1.3rem;
+    .right-desc {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .right-desc h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .right-desc p {
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
 
     footer {
-      background-color: #222;
+      background-color: rgba(105, 63, 3, 0.7);
       color: white;
       text-align: center;
       padding: 15px;
@@ -84,28 +109,38 @@
 </head>
 <body>
   <header>
-    <h1>My Sample Website</h1>
+    <h1>Elijah Knight</h1>
     <nav>
-<ul>
+      <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="../page1/index.html">Hero 1</a></li>
-        <li><a href="../page2/index.html">Hero 2</a></li>
-        <li><a href="../page3/index.html">Hero 3</a></li>
-        <li><a href="../page4/index.html">Hero 4</a></li>
-        <li><a href="../page5/index.html">Hero 5</a></li>
+        <li><a href="../page1/index.html">Arthur Leywin</a></li>
+        <li><a href="../page2/index.html">Tessia Eralith</a></li>
+        <li><a href="../page4/index.html">Sylvie</a></li>
+        <li><a href="../page5/index.html">Professor Gideon</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Hero Page 3</h2>
-      <p>This is the first hero page with unique content.</p>
-    </section>
+    <div class="left-photo">
+      <img src="./img/eli2.jpeg" alt="Hero Image">
+    </div>
+    <div class="right-desc">
+      <h2>Elijah Knight</h2>
+      <p>Elijah Knight is a major supporting character of The Beginning After The End. 
+        He is an orphan raised by the Elder Dwarf Rahdeas and a former Adventurer who acted as a representative from the Kingdom of Darv. 
+        While he was seemingly of human origin, Elijah was shown to have an affinity for metal magic. During his time as an Adventurer, 
+        he was acquainted with and became close friends with Arthur Leywin, where thanks to Arthur's influence, 
+        Elijah would become a student of Xyrus Academy under the sponsorship of Vincent Helstea.
+        During the attack on Xyrus Academy, after seeing Arthur's childhood friend Tessia Eralith in the hands of the revenge-seeking Lucas Wykes, 
+        he seemingly passes out, letting an unknown force control his body. In Elijahs' words, "as if some inner force pushed my consciousness out, 
+        my body felt like it wasn't mine anymore... like I was an entirely different person simply spectating my body from behind".
+        During this episode, after his body reached its' limit, he was kidnapped by the attackers and presumed to be taken back to Alacrya.</p>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Sample Website</p>
+    <p>&copy; 2025 Fetalvero</p>
   </footer>
 </body>
 </html>
