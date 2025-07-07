@@ -6,7 +6,7 @@
 </p>
 
 **Short Description:**  
-A multi-page web project featuring characters from *The Beginning After the End*, with added creativity, transitions, and animation to make each page unique.
+A multi-page web project featuring characters from *The Beginning After the End*, with added creativity, transitions, and animation to make each page unique and fun.
 
 ---
 
