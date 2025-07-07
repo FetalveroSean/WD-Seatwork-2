@@ -1,6 +1,7 @@
 # WD-Seatwork-2
 
-<p> align="center">
+
+<p>
   <img src="./assets/img/rd.jpeg" alt="The Beginning After the End Logo" width="300"/>
 </p>
 
