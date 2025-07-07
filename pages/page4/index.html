@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hero Page 1</title>
+  <title>Sylvie Leywin</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -13,42 +15,53 @@
 
     html, body {
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Unbounded', sans-serif;
+      overflow-x: hidden;
+      background: url('./img/sylviebg.jpeg') center/cover no-repeat fixed;
+      color: #fff;
     }
 
     header {
-      background-color: #333;
+      background: linear-gradient(to right, #53389e, #a855f7);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 20px #a855f7;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
       color: #fff;
-      padding: 20px;
-      text-align: center;
+      text-shadow: 0 0 15px #ff8cf5;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff8cf5; }
+      to { text-shadow: 0 0 20px #ff8cf5, 0 0 30px #a855f7; }
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    nav ul li {
-      margin: 0 15px;
+      gap: 20px;
     }
 
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
 
-    main {
-      flex: 1;
+    nav ul li a:hover {
+      color: #ffcdf7;
+      text-shadow: 0 0 10px #ffcdf7;
     }
 
     .hero {
-      background: url(./img/page4.jpg) center/cover no-repeat;
+      background: url('./img/page4.jpg') center/cover fixed no-repeat;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -58,54 +71,185 @@
       position: relative;
     }
 
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
     .hero h2, .hero p {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 8px;
-      color: #fff;
-      margin: 10px 0;
+      position: relative;
+      z-index: 1;
     }
 
     .hero h2 {
       font-size: 3rem;
+      color: #ffccff;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      max-width: 800px;
+      line-height: 1.7;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 30px;
+      background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 260px;
+      height: 340px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .flip-card-front {
+      background: url('./img/1sylv\ \(5\).jpeg') center/cover no-repeat;
+    }
+
+    .flip-card-back {
+      background-color: #a855f7;
+      color: white;
+      padding: 20px;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+      background: #111;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #a855f7;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .gallery img:nth-child(1) { animation-delay: 0.2s; }
+    .gallery img:nth-child(2) { animation-delay: 0.4s; }
+    .gallery img:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     footer {
-      background-color: #222;
+      background: #222;
       color: white;
       text-align: center;
       padding: 15px;
     }
+
   </style>
 </head>
 <body>
   <header>
-    <h1>My Sample Website</h1>
+    <h1>Sylvie</h1>
     <nav>
-<ul>
+      <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="../page1/index.html">Hero 1</a></li>
-        <li><a href="../page2/index.html">Hero 2</a></li>
-        <li><a href="../page3/index.html">Hero 3</a></li>
-        <li><a href="../page4/index.html">Hero 4</a></li>
-        <li><a href="../page5/index.html">Hero 5</a></li>
+        <li><a href="../page1/index.html">Arthur Leywin</a></li>
+        <li><a href="../page2/index.html">Tessia Eralith</a></li>
+        <li><a href="../page3/index.html">Elijah Knight</a></li>
+        <li><a href="../page5/index.html">Zoro</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h2>Hero Page 4</h2>
-      <p>This is the first hero page with unique content.</p>
+      <h2>The Bond of Arthur</h2>
+      <p>Sylvie Leywin is the daughter of Sylvia Indrath and Agrona Vritra, as well as the granddaughter of Kezess Indrath and Myre. 
+        She is the bond of Arthur Leywin, who was entrusted to him by her mother Sylvia.
+        Sylvie hatches in the Kingdom of Elenoir and she and Arthur go on many adventures together. 
+        She accompanies him to Xyrus Academy and later to Epheotus, where she trains with her maternal grandparents.</p>
+    </section>
+
+    <section class="cards">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"></div>
+          <div class="flip-card-back">Sylvie is not just a companion she's a descendant of dragons and one of the strongest beings alive.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background-image: url('./img/1sylv\ \(1\).jpeg');"></div>
+          <div class="flip-card-back">She undergoes transformation and evolves symbolizing her growth alongside Arthur.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background-image: url('./img/1sylv\ \(4\).jpeg');"></div>
+          <div class="flip-card-back">Sylvie shares a telepathic bond with Arthur able to sense emotions and even speak mentally.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <img src="./img/1sylv(7).jpeg" alt="Sylvie Image 1">
+      <img src="./img/1sylv (2).jpeg" alt="Sylvie Image 2">
+      <img src="./img/1sylv (6).jpeg" alt="Sylvie Image 3">
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Sample Website</p>
+    <p>&copy; 2025 Fetalvero | Elijah Knight.</p>
   </footer>
 </body>
 </html>

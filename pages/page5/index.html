@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hero Page 1</title>
+  <title>Roronoa Zoro</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -12,100 +14,179 @@
     }
 
     html, body {
-      background: url('./img/page5.jpg') center/cover no-repeat;
       height: 100%;
-      display: flex;
-      flex-direction: column;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background: #0f0f0f url('./img/zorobg.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+      overflow-x: hidden;
     }
 
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #20c997;
+      z-index: 2;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Rock Salt', cursive;
+      font-size: 2.8rem;
+      color: #20c997;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #20c997aa;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    header h1:hover {
+      transform: scale(1.1);
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    nav ul li {
-      margin: 0 15px;
+      gap: 20px;
     }
 
     nav ul li a {
-      color: #fff;
+      color: #f0f0f0;
       text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border: 1px solid transparent;
+      transition: 0.3s;
     }
 
-    main {
-      flex: 1;
+    nav ul li a:hover {
+      color: #ffffff;
+      border-color: #20c997;
+      background: rgba(32, 201, 151, 0.1);
     }
 
     .hero {
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
+      padding: 60px 20px;
       position: relative;
-    }
-
-    .hero h2, .hero p {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 8px;
-      color: #fff;
-      margin: 10px 0;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .hero h2 {
       font-size: 3rem;
+      color: #ffffff;
+      font-family: 'Rock Salt', cursive;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px #20c99788;
     }
 
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      max-width: 800px;
+      line-height: 1.8;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #20c997;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      border: 3px solid #20c997;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #20c99799;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.2) rotate(-2deg);
+      box-shadow: 0 0 30px #ffffffaa;
+      z-index: 5;
+    }
+
+    .katana-slash {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, rgba(32, 201, 151, 0.3), transparent);
+      transform: skewX(-30deg);
+      animation: slash 2s ease-in-out infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    @keyframes slash {
+      0% { transform: translateX(-100%) skewX(-30deg); }
+      100% { transform: translateX(100%) skewX(-30deg); }
     }
 
     footer {
-      background-color: #222;
-      color: white;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #20c997;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      border-top: 2px solid #20c997;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Sample Website</h1>
+    <h1>Zoro</h1>
     <nav>
-<ul>
+      <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="../page1/index.html">Hero 1</a></li>
-        <li><a href="../page2/index.html">Hero 2</a></li>
-        <li><a href="../page3/index.html">Hero 3</a></li>
-        <li><a href="../page4/index.html">Hero 4</a></li>
-        <li><a href="../page5/index.html">Hero 5</a></li>
+        <li><a href="../page1/index.html">Arthur Leywin</a></li>
+        <li><a href="../page2/index.html">Tessia Eralith</a></li>
+        <li><a href="../page3/index.html">Elijah Knight</a></li>
+        <li><a href="../page4/index.html">Sylvie</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Hero Page 5</h2>
-      <p>This is the first hero page with unique content.</p>
-    </section>
+  <div class="katana-slash"></div>
+
+  <main class="hero">
+    <h2>Santoryu - Three Sword Style</h2>
+    <p>
+      Roronoa Zoro is the swordsman of the Straw Hat Pirates and one of the most powerful characters in the *One Piece* universe.
+      Trained by Dracule Mihawk, the world's strongest swordsman, Zoro wields three swords with deadly precision. His dream is to become the greatest swordsman in the world.
+      Known for his unmatched willpower, loyalty to Luffy, and the sheer intensity of his techniques like *Oni Giri* and *Asura*, Zoro slices through all odds on the Grand Line.
+    </p>
   </main>
 
+  <section class="gallery">
+    <img src="./img/zoro1.jpeg" alt="Zoro 1">
+    <img src="./img/zoro2.jpeg" alt="Zoro 2">
+    <img src="./img/zoro3.jpeg" alt="Zoro 3">
+    <img src="./img/zoro4.jpeg" alt="Zoro 4">
+  </section>
+
   <footer>
-    <p>&copy; 2025 My Sample Website</p>
+    <p>&copy; 2025 Fetalvero | Zoro the Pirate Hunter</p>
   </footer>
 </body>
 </html>
