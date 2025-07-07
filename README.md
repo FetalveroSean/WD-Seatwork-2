@@ -27,31 +27,71 @@ This is a multi-page HTML and CSS website created for a Web Development seatwork
 
 ## 🛠️ Technology
 
-![HTML]
-![CSS]
+![HTML](https://img.shields.io/badge/HTML-F06529?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-2965f1?style=for-the-badge&logo=css3&logoColor=white)
 
 ---
 
 ## 🗂️ File Structure
 
 ```plaintext
+
 WD-Seatwork-2/
 ├── index.html
 ├── css/
 │   └── style.css
 ├── img/
-│   └── *.jpeg / *.jpg / *.webp / *.png
+│   ├── background.jpg
+│   ├── logo.png
+│   └── shared-assets...
 ├── pages/
-│   ├── page1/
+│   ├── page1/                ← Arthur Leywin
 │   │   ├── index.html
 │   │   ├── css/
 │   │   │   └── style.css
 │   │   ├── img/
-│   │   │   └── images...
-│   ├── page2/
-│   │   └── (same structure)
-│   ├── page3/
-│   ├── page4/
-│   ├── page5/ (Zoro)
-│
-└── README.md
+│   │   │   └── arthur1.jpg
+│   │   └── js/
+│   │       └── script.js
+│   ├── page2/                ← Tessia Eralith
+│   │   ├── index.html
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── img/
+│   │   │   └── tessia1.png
+│   │   └── js/
+│   │       └── script.js
+│   ├── page3/                ← Elijah Knight
+│   │   ├── index.html
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── img/
+│   │   │   └── elijah1.png
+│   │   └── js/
+│   │       └── script.js
+│   ├── page4/                ← Sylvie
+│   │   ├── index.html
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── img/
+│   │   │   └── sylvie1.jpg
+│   │   └── js/
+│   │       └── script.js
+│   ├── page5/                ← Zoro (Bonus)
+│   │   ├── index.html
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── img/
+│   │   │   └── zoro1.png
+│   │   └── js/
+│   │       └── script.js
+├── README.md
+
+
+---
+
+| Resource Type | Description                     | Link                                       |
+| ------------- | ------------------------------- | ------------------------------------------ |
+| Photos        | Character and background images | [Pinterest](https://www.pinterest.com)     |
+| Photos        | General image search and assets | [Google Images](https://images.google.com) |
+
