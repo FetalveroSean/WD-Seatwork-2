@@ -36,56 +36,68 @@ This is a multi-page HTML and CSS website created for a Web Development seatwork
 
 ```plaintext
 
-WD-Seatwork-2/
-├── index.html
-├── css/
+WD-SEATWORK-2/
+│
+├── .github/
+│   └── workflows/
+│       └── static.yml
+│
+├── assets/
+│   ├── img/
+│   │   ├── art.jpeg
+│   │   ├── art2.jpeg
+│   │   ├── bg.webp
+│   │   ├── elijah.jpeg
+│   │   ├── gideon.jpeg
+│   │   ├── home.jpeg
+│   │   ├── home2.jpeg
+│   │   ├── rd.jpeg
+│   │   ├── Roronoa Zoro wallpaper.jpeg
+│   │   ├── Sylvie.jpeg
+│   │   └── tess.jpeg
 │   └── style.css
-├── img/
-│   ├── background.jpg
-│   ├── logo.png
-│   └── shared-assets...
+│
 ├── pages/
-│   ├── page1/                ← Arthur Leywin
-│   │   ├── index.html
-│   │   ├── css/
-│   │   │   └── style.css
+│   ├── page1/
 │   │   ├── img/
-│   │   │   └── arthur1.jpg
-│   │   └── js/
-│   │       └── script.js
-│   ├── page2/                ← Tessia Eralith
-│   │   ├── index.html
-│   │   ├── css/
-│   │   │   └── style.css
+│   │   │   ├── 1.jpeg to 6.jpeg
+│   │   │   ├── Arthur Leywin.jpeg
+│   │   │   └── artpg1.jpg
+│   │   └── index.html
+│   │
+│   ├── page2/
 │   │   ├── img/
-│   │   │   └── tessia1.png
-│   │   └── js/
-│   │       └── script.js
-│   ├── page3/                ← Elijah Knight
-│   │   ├── index.html
-│   │   ├── css/
-│   │   │   └── style.css
+│   │   │   ├── t1.jpeg to t5.jpeg
+│   │   │   ├── tess.jpeg
+│   │   │   ├── tessbg.jpeg
+│   │   │   └── tessiabg.jpeg
+│   │   └── index.html
+│   │
+│   ├── page3/
 │   │   ├── img/
-│   │   │   └── elijah1.png
-│   │   └── js/
-│   │       └── script.js
-│   ├── page4/                ← Sylvie
-│   │   ├── index.html
-│   │   ├── css/
-│   │   │   └── style.css
+│   │   │   ├── eli.jpeg
+│   │   │   ├── eli2.jpeg
+│   │   │   ├── eli3 (1).jpeg
+│   │   │   ├── eli4.jpeg
+│   │   │   └── elijah.jpeg
+│   │   └── index.html
+│   │
+│   ├── page4/
 │   │   ├── img/
-│   │   │   └── sylvie1.jpg
-│   │   └── js/
-│   │       └── script.js
-│   ├── page5/                ← Zoro (Bonus)
-│   │   ├── index.html
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   ├── img/
-│   │   │   └── zoro1.png
-│   │   └── js/
-│   │       └── script.js
-├── README.md
+│   │   │   ├── 1sylv (1).jpeg to 1sylv (7).jpeg
+│   │   │   └── sylviebg.jpeg
+│   │   └── index.html
+│   │
+│   └── page5/
+│       ├── img/
+│       │   ├── download (7).jpeg
+│       │   ├── zoro1.jpeg to zoro4.jpeg
+│       │   └── zorobg.jpeg
+│       └── index.html
+│
+├── .gitattributes
+├── index.html
+└── README.md
 
 
 ---
