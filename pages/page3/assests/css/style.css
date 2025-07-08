@@ -9,7 +9,7 @@
 
     html, body {
       font-family: 'Orbitron', sans-serif;
-      background: url('../img/elijah.jpeg') center/cover no-repeat fixed;
+      background: url(../img/elijah.jpeg) center/cover no-repeat fixed;
       color: #ffffff;
       min-height: 100vh;
       display: flex;

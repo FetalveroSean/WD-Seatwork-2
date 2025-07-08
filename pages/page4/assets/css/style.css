@@ -11,7 +11,7 @@
       height: 100%;
       font-family: 'Unbounded', sans-serif;
       overflow-x: hidden;
-      background: url('../img/sylviebg.jpeg') center/cover no-repeat fixed;
+      background: url(../img/sylviebg.jpeg) center/cover no-repeat fixed;
       color: #fff;
     }
 
@@ -134,7 +134,7 @@
     }
 
     .flip-card-front {
-      background: url('./img/1sylv\ \(5\).jpeg') center/cover no-repeat;
+      background: url('../img/5slyv.jpeg') center/cover no-repeat;
     }
 
     .flip-card-back {
