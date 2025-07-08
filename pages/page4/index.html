@@ -4,196 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sylvie Leywin</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      font-family: 'Unbounded', sans-serif;
-      overflow-x: hidden;
-      background: url('./img/sylviebg.jpeg') center/cover no-repeat fixed;
-      color: #fff;
-    }
-
-    header {
-      background: linear-gradient(to right, #53389e, #a855f7);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 0 20px #a855f7;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #fff;
-      text-shadow: 0 0 15px #ff8cf5;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #ff8cf5; }
-      to { text-shadow: 0 0 20px #ff8cf5, 0 0 30px #a855f7; }
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #ffcdf7;
-      text-shadow: 0 0 10px #ffcdf7;
-    }
-
-    .hero {
-      background: url('./img/page4.jpg') center/cover fixed no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 0;
-    }
-
-    .hero h2, .hero p {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      color: #ffccff;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      line-height: 1.7;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      backdrop-filter: blur(5px);
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 60px 20px;
-      gap: 30px;
-      background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
-    }
-
-    .flip-card {
-      background-color: transparent;
-      width: 260px;
-      height: 340px;
-      perspective: 1000px;
-    }
-
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-    }
-
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-
-    .flip-card-front {
-      background: url('./img/1sylv\ \(5\).jpeg') center/cover no-repeat;
-    }
-
-    .flip-card-back {
-      background-color: #a855f7;
-      color: white;
-      padding: 20px;
-      transform: rotateY(180deg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 50px 20px;
-      background: #111;
-    }
-
-    .gallery img {
-      width: 220px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 0 15px #a855f7;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .gallery img:nth-child(1) { animation-delay: 0.2s; }
-    .gallery img:nth-child(2) { animation-delay: 0.4s; }
-    .gallery img:nth-child(3) { animation-delay: 0.6s; }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
 </head>
 <body>
   <header>
@@ -228,23 +41,23 @@
 
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front" style="background-image: url('./img/1sylv\ \(1\).jpeg');"></div>
+          <div class="flip-card-front" style="background-image: url('./assets/img/1sylv\ \(1\).jpeg');"></div>
           <div class="flip-card-back">She undergoes transformation and evolves symbolizing her growth alongside Arthur.</div>
         </div>
       </div>
 
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front" style="background-image: url('./img/1sylv\ \(4\).jpeg');"></div>
+          <div class="flip-card-front" style="background-image: url('./assets/img/1sylv\ \(4\).jpeg');"></div>
           <div class="flip-card-back">Sylvie shares a telepathic bond with Arthur able to sense emotions and even speak mentally.</div>
         </div>
       </div>
     </section>
 
     <section class="gallery">
-      <img src="./img/1sylv(7).jpeg" alt="Sylvie Image 1">
-      <img src="./img/1sylv (2).jpeg" alt="Sylvie Image 2">
-      <img src="./img/1sylv (6).jpeg" alt="Sylvie Image 3">
+      <img src="./assets/img/1sylv(7).jpeg" alt="Sylvie Image 1">
+      <img src="./assets/img/1sylv (2).jpeg" alt="Sylvie Image 2">
+      <img src="./assets/img/1sylv (6).jpeg" alt="Sylvie Image 3">
     </section>
   </main>
 
