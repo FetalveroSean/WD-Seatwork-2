@@ -55,7 +55,8 @@ WD-SEATWORK-2/
 │   │   ├── Roronoa Zoro wallpaper.jpeg
 │   │   ├── Sylvie.jpeg
 │   │   └── tess.jpeg
-│   └── style.css
+│   └── css
+│        └── style.css
 │
 ├── pages/
 │   ├── page1/
