@@ -59,46 +59,60 @@ WD-SEATWORK-2/
 │
 ├── pages/
 │   ├── page1/
-│   │   ├── img/
-│   │   │   ├── 1.jpeg to 6.jpeg
-│   │   │   ├── Arthur Leywin.jpeg
-│   │   │   └── artpg1.jpg
+│   │   ├── assets/
+│   │   │   ├── img/
+│   │   │   │   ├── 1.jpeg to 6.jpeg
+│   │   │   │   ├── Arthur Leywin.jpeg
+│   │   │   │   └── artpg1.jpg
+│   │   │   └── css/
+│   │   │       └── style.css
 │   │   └── index.html
 │   │
 │   ├── page2/
-│   │   ├── img/
-│   │   │   ├── t1.jpeg to t5.jpeg
-│   │   │   ├── tess.jpeg
-│   │   │   ├── tessbg.jpeg
-│   │   │   └── tessiabg.jpeg
+│   │   ├── assets/
+│   │   │   ├── img/
+│   │   │   │   ├── t1.jpeg to t5.jpeg
+│   │   │   │   ├── tess.jpeg
+│   │   │   │   ├── tessbg.jpeg
+│   │   │   │   └── tessiabg.jpeg
+│   │   │   └── css/
+│   │   │       └── style.css
 │   │   └── index.html
 │   │
 │   ├── page3/
-│   │   ├── img/
-│   │   │   ├── eli.jpeg
-│   │   │   ├── eli2.jpeg
-│   │   │   ├── eli3 (1).jpeg
-│   │   │   ├── eli4.jpeg
-│   │   │   └── elijah.jpeg
+│   │   ├── assets/
+│   │   │   ├── img/
+│   │   │   │   ├── eli.jpeg
+│   │   │   │   ├── eli2.jpeg
+│   │   │   │   ├── eli3 (1).jpeg
+│   │   │   │   ├── eli4.jpeg
+│   │   │   │   └── elijah.jpeg
+│   │   │   └── css/
+│   │   │       └── style.css
 │   │   └── index.html
 │   │
 │   ├── page4/
-│   │   ├── img/
-│   │   │   ├── 1sylv (1).jpeg to 1sylv (7).jpeg
-│   │   │   └── sylviebg.jpeg
+│   │   ├── assets/
+│   │   │   ├── img/
+│   │   │   │   ├── 1sylv (1).jpeg to 1sylv (7).jpeg
+│   │   │   │   └── sylviebg.jpeg
+│   │   │   └── css/
+│   │   │       └── style.css
 │   │   └── index.html
 │   │
 │   └── page5/
-│       ├── img/
-│       │   ├── download (7).jpeg
-│       │   ├── zoro1.jpeg to zoro4.jpeg
-│       │   └── zorobg.jpeg
+│       ├── assets/
+│       │   ├── img/
+│       │   │   ├── download (7).jpeg
+│       │   │   ├── zoro1.jpeg to zoro4.jpeg
+│       │   │   └── zorobg.jpeg
+│       │   └── css/
+│       │       └── style.css
 │       └── index.html
 │
 ├── .gitattributes
 ├── index.html
 └── README.md
-
 
 ---
 
